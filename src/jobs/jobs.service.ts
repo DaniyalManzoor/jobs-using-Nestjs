@@ -31,6 +31,6 @@ export class JobsService {
   }
 
   async deleteJob(id: string): Promise<Job> {
-    return this.jobModel.findByIdAndRemove(id);
+    return await this.jobModel.findByIdAndRemove(id);
   }
 }
